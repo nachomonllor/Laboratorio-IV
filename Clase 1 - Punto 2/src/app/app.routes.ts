@@ -8,6 +8,6 @@ export const routes: Routes = [
     { path: 'bienvenido', component: BienvenidoComponent },
     { path: 'login', component: LoginComponent },
     { path: 'error', component: ErrorComponent },
-    { path: '', redirectTo: '/bienvenido', pathMatch: 'full' }, // Redirección a 'bienvenido'
+    { path: '', redirectTo: '/login', pathMatch: 'full' }, // Redirección a 'bienvenido'
     { path: '**', component: ErrorComponent }, // Wildcard Route para un 404
   ];
