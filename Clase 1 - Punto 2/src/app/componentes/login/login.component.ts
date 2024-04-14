@@ -11,25 +11,29 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.css',
 })
 export class LoginComponent {
-  usuario: Usuario = new Usuario('Nacho', '1234');
-  //usuario = '';
-  clave = '';
+  
+   usuario: Usuario = new Usuario('xx', 'xx');
 
   //credenciales correctas
-  private correctoUsuario = 'usuario';
-  private correctoClave = 'clave123';
+   correctoUsuario = 'Nacho';
+   correctoClave = '1234';
 
   constructor(private router: Router) {}
 
   ingresar() {
+
+    console.log("Intentando ingresar con:", this.usuario.nombre, this.usuario.clave);
+    console.log("Valores esperados:", this.correctoUsuario, this.correctoClave);
     if (
+
       this.usuario.nombre === this.correctoUsuario &&
-      this.clave === this.correctoClave
+      this.usuario.clave === this.correctoClave
     ) {
       // Navegar a Bienvenido si las credenciales son correctas
       this.router.navigate(['/bienvenido']);
     } else {
-      alert('Usuario o contraseña incorrectos');
+      // alert('Usuario o contraseña incorrectos --- ');
+      this.router.navigate(['/error']);
     }
   }
 }
