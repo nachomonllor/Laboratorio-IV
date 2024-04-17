@@ -1,4 +1,4 @@
-  <div class="login-container">
+ <div class="login-container">
     <h2>Login</h2>
     <form>
       <div class="form-group">
@@ -9,10 +9,8 @@
         <label for="clave">Clave:</label>
         <input type="password" id="clave" [(ngModel)]="usuario.clave" name="clave" class="form-control">
       </div>
-      <button type="button" (click)="ingresar()" class="btn btn-primary">Ingresar</button>
+      <button type="button" (click)="registrar()" class="btn btn-primary">Ingresar</button>
     </form>
-    <div class="registro-link">
-        <p>¿Sos nuevo?</p>
-        <button type="button" (click)="navegarARegistro()" class="btn btn-secondary">Registrarse</button>
-    </div>
   </div>
+
+  

@@ -42,18 +42,3 @@ label {
 .btn-primary:hover {
     background-color: #0056b3;
 }
-
-.btn-secondary {
-  background-color: #6c757d;
-  color: white;
-  border-radius: 5px;
-  padding: 10px 20px;
-  display: block;
-  width: 100%;
-  margin-top: 10px; /* Espacio extra entre el mensaje y el botón */
-  cursor: pointer;
-}
-
-.btn-secondary:hover {
-  background-color: #5a6268;
-}
