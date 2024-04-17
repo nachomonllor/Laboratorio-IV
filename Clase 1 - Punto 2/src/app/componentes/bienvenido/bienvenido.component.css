@@ -1,6 +1,5 @@
-/* Archivo: bienvenido.component.css */
 :host {
     display: block; /* Asegura que el :host llene el contenedor */
     background-color: #808080; /* Gris */
-    min-height: 100vh; /* O la altura que prefieras */
+    min-height: 100vh; 
   }

@@ -3,6 +3,7 @@ import { Usuario } from '../../clases/Usuario';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { StorageService } from '../../services/storage.service';
+import { UsuariosComponent } from '../usuarios/usuarios.component';
 
 @Component({
   selector: 'app-login',

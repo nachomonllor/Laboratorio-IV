@@ -34,6 +34,6 @@ export class RegistroComponent {
 
   registrar() {
     this.storageService.guardarUsuario(this.usuario);
-    this.router.navigate(['/login']); // Redirige al login después del registro
+    this.router.navigate(['/login']); //redirige al login 
   }
 }
